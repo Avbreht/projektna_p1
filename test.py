@@ -5,9 +5,6 @@ import requests
 import sys
 import re
 
-url = 'https://boardgamegeek.com/browse/boardgame'
-ime_datoteke = 'html_koda.html'
-
 def pripravi_imenik(ime_datoteke):
     '''Če še ne obstaja, pripravi prazen imenik za dano datoteko.'''
     imenik = os.path.dirname(ime_datoteke)
@@ -53,6 +50,3 @@ def zapisi_json(objekt, ime_datoteke):
     with open(ime_datoteke, 'w', encoding='utf-8') as json_datoteka:
         json.dump(objekt, json_datoteka, indent=4, ensure_ascii=False)
 
-
-pripravi_imenik(ime_datoteke)
-shrani_spletno_stran(url, ime_datoteke)
