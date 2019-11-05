@@ -18,12 +18,12 @@ vzorec_igre = re.compile(
 )
 
 vzorec_ocene = re.compile(
-    r"<td class='collection_bggrating' align='center'>.*?",
+    r"<td class='collection_bggrating' align='center'>\s",
     flags=re.DOTALL
 )
 
 count = 0
 for ujemanje in re.finditer(vzorec_ocene, vsebina):
-    print(ujemanje.groupdict())
+    print(ujemanje)
     count += 1
 print(count)
