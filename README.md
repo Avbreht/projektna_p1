@@ -1,4 +1,4 @@
-# projektna_p1
+# Projektna naloga : <Ime>
 Projektna naloga pri Programiranju 1
 
 Najbolse namizne igre
