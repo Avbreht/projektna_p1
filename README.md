@@ -17,3 +17,13 @@ Delovne hipoteze:
 * Ali je kaka povezava med številom igralcev in oceno igre?
 * Kateri žaner je med najbolj priljubljenimi?
 * Ali več igralcev pomeni daljša igra?
+
+
+
+## Navodila za razvijalce 
+
+To activate virtual env:
+`source env/bin/activate`
+
+To run jupyter notebook:
+`jupyter notebook`
